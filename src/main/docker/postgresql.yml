@@ -1,0 +1,11 @@
+version: '2'
+services:
+    appdroits-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/appdroits/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=appdroits
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
